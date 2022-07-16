@@ -23,7 +23,7 @@ GET <domain:port>/generate_password?<parameters>
 > None of the parameters are required.
 
 | Key                      | Type | Default |
-| ----------------         | ---- | ------- |
+| ------------------------ | ---- | ------- |
 | word_count<sup>a,b</sup> | int  | 2       |
 | delimiter<sup>c,d</sup>  | str  | '-'     |
 | contains_number          | bool | True    |
