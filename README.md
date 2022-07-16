@@ -1,6 +1,6 @@
-# Password Generator (GCP Functions Tutorial)
+# Password Generator
 
-A toy project for GCP Functions that generates xkcd-ish passwords.
+A toy project for GCP Functions that generates [xkcd-ish passwords](https://xkcd.com/936/).
 
 ## Requirements
 
