@@ -14,7 +14,9 @@ There is nothing to install.
 
 After deployment, simply:
 
-GET __\<domain:port\>__/generate_password?__\<parameters\>__
+```
+GET <domain:port>/generate_password?<parameters>
+```
 
 ### Parameters
 
