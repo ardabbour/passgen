@@ -23,7 +23,10 @@ def shannon_entropy(string: str) -> float:
         Shannon entropy of string.
     """
 
-    prob = [float(string.count(c)) / len(string) for c in dict.fromkeys(list(string))]
+    prob = [
+        float(string.count(c)) / len(string)
+        for c in dict.fromkeys(list(string))
+    ]
 
     entropy = -sum(p * math.log(p) / math.log(2.0) for p in prob)
 

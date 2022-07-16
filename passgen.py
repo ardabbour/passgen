@@ -28,8 +28,9 @@ def passgen(
 ) -> str:
     """xkcd-ish Password Generator Function. https://xkcd.com/936/
     Args:
-        word_count (int): Number of words to create a password from; must be >1.
-        delimiter (str): Delimiter between words; must be empty space or in `string.punctuation`.
+        word_count (int): Number of words must be 1 > word_count > 9.
+        delimiter (str): Delimiter between words; must be empty space or in
+                         `string.punctuation`.
         contains_number (bool): Adds a number in the range [0, 100) if true.
         title_case (bool): Makes each word in the password Title Case.
     Returns:
@@ -48,7 +49,9 @@ def passgen(
         raise ValueError("Delimiter must be a single character!")
 
     if delimiter not in string.punctuation + " ":
-        raise ValueError("Delimiter must be empty space or `string.punctuation`!")
+        raise ValueError(
+            "Delimiter must be empty space or `string.punctuation`!"
+        )
 
     base_pass = [secrets.choice(words.WORDS) for _ in range(word_count)]
 

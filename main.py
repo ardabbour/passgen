@@ -3,7 +3,7 @@
 
 """Google Functions executor for password generator.
 
-Creates a flask endpoint to generate an xkcd-ish password using Google Functions.
+Creates a flask endpoint to generate an xkcd-ish password using GCP Functions.
 
 Author: Abdul Rahman Dabbour
 License: MIT
@@ -64,7 +64,9 @@ def generate_password(request: flask.Request):
         "contains_number", default=True, type=str_to_bool
     )
     title_case = request.args.get("title_case", default=True, type=str_to_bool)
-    report_params = request.args.get("report_params", default=False, type=str_to_bool)
+    report_params = request.args.get(
+        "report_params", default=False, type=str_to_bool
+    )
     report_entropies = request.args.get(
         "report_entropies", default=False, type=str_to_bool
     )
