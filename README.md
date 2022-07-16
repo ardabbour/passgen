@@ -12,10 +12,12 @@ There is nothing to install.
 
 ## Usage
 
-After deployment, simply:
+### Live Demo
 
-```
-GET <domain:port>/generate_password?<parameters>
+For a demo, try:
+
+```bash
+curl "https://generate-password-h5i3eq52qq-oa.a.run.app/"
 ```
 
 ### Parameters
